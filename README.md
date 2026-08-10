@@ -1,4 +1,4 @@
-# Klayton's TweenService Animator:tm: (KTA)
+# Klayton's TweenService Animator:tm:
 
 *NOTE: This project is currently W.I.P with little to no documentation. If you're brave enough to touch this code, then pay attention when reading it.*
 *You can track current progress in [Roadmap to beta](https://github.com/iamklayton/klay-tween-animator/issues/5)*
