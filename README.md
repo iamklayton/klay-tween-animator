@@ -13,3 +13,7 @@ No reason. But if I had Subject-106 pointing two SPAS-12s at my head, then I wou
 - Better control. You decide how animations look and move.
 - Ease of use. Just call PlayKeyframe() whenever the client decides it needs to animate something.
 - No need for waiting for animations to load because it's not even animations, it's a sequence of Welds being Tweened in a specific rhythm.
+- Good if you want to replicate the style of old CFrame animations without wanting to smash your head into a brick staring at...
+<img width="972" height="537" alt="image" src="https://github.com/user-attachments/assets/c41bdcd6-6e52-4ac2-addf-32f4fd4c1c01" />
+whatever the fuck this is.
+
