@@ -18,11 +18,16 @@ function Animator.new(animfolder,animname,basespeed)
 	return self
 end
 
--- TODO: Base animation speed and making the keyframes have their own speed instead of having the same speed
+-- Playing a specific keyframe on a specific rig
 function Animator:PlayKeyframe(rig,keyframe)
 	print(rig.Name.." "..self.animfolder.Name.." "..tostring(keyframe))
 	
-	local tweeninfo = TweenInfo.new(0.5,Enum.EasingStyle.Linear,Enum.EasingDirection.In)
+	-- Data from the keyframe
+	local animdata = {
+		speed = self.animfolder[keyframe]:GetAttribute("speed") -- How long it takes for the tween to be completed
+	}
+	
+	local tweeninfo = TweenInfo.new(animdata.speed / self.basespeed,Enum.EasingStyle.Linear,Enum.EasingDirection.In)
 	
 	-- Pose detection
 	for _,PosePart in ipairs(self.animfolder[keyframe]:GetChildren()) do
@@ -54,7 +59,21 @@ function Animator:PlayKeyframe(rig,keyframe)
 		-- Finally tweening the C0 to match the target C0 position
 		game.TweenService:Create(weld,tweeninfo,{C0 = targetC0}):Play()
 	end
-	-- TODO: Animation event detection
+	for _,Event in ipairs(self.animfolder[keyframe]:GetChildren()) do
+		-- Nothing actually fires it, the icon for BindableEvents just looks nice for animation events/markers
+		if Event:IsA("BindableEvent") then
+			local eventdata = {
+				name = Event:GetAttribute("name"),
+				delay = Event:GetAttribute("delay"),
+				data = Event:GetAttribute("data"),
+			}
+			
+			-- Whatever you want to use for passing the event data to the client
+			-- I recommend FastSignals - https://github.com/RBLXUtils/FastSignal
+			
+			
+		end
+	end
 end
 
 -- Small testing function in case you think your animation definitions aren't working.
