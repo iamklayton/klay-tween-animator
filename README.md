@@ -1,7 +1,7 @@
 # Klayton's TweenService Animator:tm:
 
 *NOTE: This project is currently W.I.P with little to no documentation. If you're brave enough to touch this code, then pay attention when reading it.*
-*You can track current progress in [Roadmap to beta](https://github.com/iamklayton/klay-tween-animator/issues/5)*
+*Currently in beta and is meant to be used for R6 rigs*
 
 This is a custom """"animation"""" system for Roblox that makes use of TweenService with a focus on server-to-client archietchure. Using TweenService allows better flexibility and making animations naturally look smoother, it also allows you to better make procedural animations and/or additive animations if you know what you're doing.
 
