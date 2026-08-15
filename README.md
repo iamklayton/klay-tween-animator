@@ -1,7 +1,7 @@
 # Klayton's TweenService Animator:tm:
 
 *NOTE: This project is currently W.I.P with little to no documentation. If you're brave enough to touch this code, then pay attention when reading it.*
-*Currently in beta and is meant to be used for R6 rigs*
+*You can track current progress in [Roadmap to 1.0](https://github.com/iamklayton/klay-tween-animator/issues/8)*
 
 This is a custom """"animation"""" system for Roblox that makes use of TweenService with a focus on server-to-client archietchure. Using TweenService allows better flexibility and making animations naturally look smoother, it also allows you to better make procedural animations and/or additive animations if you know what you're doing.
 
@@ -12,9 +12,6 @@ It includes basic animation event detection if you want to time effects or hit r
 # Why use this over Roblox's animation system?
 No reason. But if I had Subject-106 pointing two SPAS-12s at my head, then I would say the benefits are:
 - Better control. You decide how animations look and move.
-- Ease of use. Animations are poses instead of clips, keyframes are just models so sharing and making animations is easier.
+- Ease of use. Animations are raw data instead of clips. So sharing and making animations is easier.
 - No need for waiting for animations to load because it's not even animations, it's a sequence of Welds being Tweened in a specific rhythm.
-- Good if you want to replicate the style of old CFrame animations without wanting to smash your head into a brick wall staring at...
-<img width="972" height="537" alt="image" src="https://github.com/user-attachments/assets/c41bdcd6-6e52-4ac2-addf-32f4fd4c1c01" />
-whatever the fuck this is.
 
