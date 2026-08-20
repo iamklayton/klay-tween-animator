@@ -67,7 +67,6 @@ function animationplayer:stop()
 	self.frame = 1
 	
 	if (self._activethread) then
-		task.cancel(self._activethread)
 		self._activethread = nil
 	end
 end
